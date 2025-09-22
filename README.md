@@ -24,6 +24,37 @@ This repository contains a PyTorch implementation of a Convolutional Neural Netw
 3. **Upgraded from SGD+StepLR to Adam+ReduceLROnPlateau** → Improved convergence and final accuracy
 4. **Batch Size Optimization** → Tested 512, 128, 64, 32 → Selected 64 for optimal performance/memory balance
 
+## 📊 Training Results Log
+
+```
+Epoch 1:  Test set: Average loss: 0.5962, Accuracy: 9788/10000 (97.88%)
+Epoch 2:  Test set: Average loss: 0.5611, Accuracy: 9869/10000 (98.69%)
+Epoch 3:  Test set: Average loss: 0.5542, Accuracy: 9887/10000 (98.87%)
+Epoch 4:  Test set: Average loss: 0.5438, Accuracy: 9911/10000 (99.11%)
+Epoch 5:  Test set: Average loss: 0.5389, Accuracy: 9915/10000 (99.15%)
+Epoch 6:  Test set: Average loss: 0.5387, Accuracy: 9909/10000 (99.09%)
+Epoch 7:  Test set: Average loss: 0.5346, Accuracy: 9923/10000 (99.23%)
+Epoch 8:  Test set: Average loss: 0.5343, Accuracy: 9926/10000 (99.26%)
+Epoch 9:  Test set: Average loss: 0.5297, Accuracy: 9932/10000 (99.32%)
+Epoch 10: Test set: Average loss: 0.5284, Accuracy: 9927/10000 (99.27%)
+Epoch 11: Test set: Average loss: 0.5294, Accuracy: 9919/10000 (99.19%)
+Epoch 12: Test set: Average loss: 0.5292, Accuracy: 9925/10000 (99.25%)
+Epoch 13: Test set: Average loss: 0.5239, Accuracy: 9943/10000 (99.43%)
+Epoch 14: Test set: Average loss: 0.5231, Accuracy: 9941/10000 (99.41%)
+Epoch 15: Test set: Average loss: 0.5225, Accuracy: 9942/10000 (99.42%)
+Epoch 16: Test set: Average loss: 0.5225, Accuracy: 9949/10000 (99.49%)
+Epoch 17: Test set: Average loss: 0.5212, Accuracy: 9948/10000 (99.48%)
+Epoch 18: Test set: Average loss: 0.5214, Accuracy: 9947/10000 (99.47%)
+Epoch 19: Test set: Average loss: 0.5215, Accuracy: 9949/10000 (99.49%)
+Epoch 20: Test set: Average loss: 0.5208, Accuracy: 9949/10000 (99.49%)
+```
+
+**Key Observations:**
+- **Rapid Initial Improvement**: Accuracy jumped from 97.88% to 99.11% in first 4 epochs
+- **Stable Convergence**: Consistent performance above 99% from epoch 4 onwards
+- **Peak Performance**: Achieved 99.49% accuracy in epochs 16, 19, and 20
+- **Minimal Overfitting**: Test loss continued to decrease throughout training
+
 ## Dataset
 
 - **Dataset**: MNIST (Modified National Institute of Standards and Technology)
